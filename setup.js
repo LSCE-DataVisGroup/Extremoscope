@@ -43,6 +43,8 @@ $(document).ready(function() {
     timeAggregateChart = dc.rowChart("#chart-seasons")
     percentileChart = dc.rowChart("#chart-percentile");
     
+    //d3.csv("data/percentile_7models_10indices_noOBS_noValueCol.csv", function(csv) { //DOES NOT contain snow
+    //d3.csv("data/percentile_7models_10indices_noOBS_noValueCol_WITHSNOW_2percentiles_ipynb.csv", function(csv) { //contains snow  
     d3.csv("data/percentile_7models_10indices_noOBS_noValueCol_WITHSNOW_4percentiles.csv", function(csv) { //contains snow   
 
       regions = {
